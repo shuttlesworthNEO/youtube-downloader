@@ -12,3 +12,7 @@ def MainView(request):
         if form.is_valid():
             argument = form.cleaned_data['song_name']
             downloader(argument)
+    else:
+        form = SongNameForm()
+
+    return render(request, 'index.html', {'form' : form})

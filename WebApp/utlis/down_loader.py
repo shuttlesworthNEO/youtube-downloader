@@ -32,4 +32,4 @@ def downloader(argv):
 	if arguments[1] == '-m':
 		os.system('youtube-dl --verbose -x --audio-format mp3 --audio-quality 0 '+ download_url)
 	else:
-		os.system('youtube-dl '+download_url)
+		os.system('youtube-dl -i '+download_url)
